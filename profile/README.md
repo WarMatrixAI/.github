@@ -62,5 +62,3 @@ Once the simulation is live, the user enters the active operational phase:
 Upon mission completion, the system transitions to a **Final Mission Report** (After-Action Review):
 - **Casualty & Efficiency Analysis:** Detailed metrics on personnel losses, armor damage, and ammunition expenditure.
 - **Strategic Scoring:** The AI evaluates the commander's performance, providing a narrative critique of the tactics employed and suggesting improvements for future engagements.
-
----
