@@ -9,15 +9,24 @@ jobs:
   sync-downstream:
     runs-on: ubuntu-latest
     if: github.repository_owner == 'WarMatrixAI'
+
     steps:
+      - name: Check GitHub CLI Authentication
+        env:
+          GH_TOKEN: ${{ secrets.ORG_SYNC_PAT }}
+        run: |
+          gh auth status
+
       - name: Sync Member Forks
         env:
           GH_TOKEN: ${{ secrets.ORG_SYNC_PAT }}
         run: |
-          # Target usernames configured for automatic downstream syncing
-          MEMBERS=("zzz-creator" "ytfl") 
-          
+          MEMBERS=("zzz-creator" "ytfl")
+
           for MEMBER in "${MEMBERS[@]}"; do
-            echo "Attempting upstream synchronization for $MEMBER/${{ github.event.repository.name }}..."
-            gh repo sync "$MEMBER/${{ github.event.repository.name }}" --branch main || echo "::warning:: Failed to sync $MEMBER's fork. Check branch permissions."
+            echo "=================================="
+            echo "Syncing $MEMBER/${{ github.event.repository.name }}"
+            echo "=================================="
+
+            gh repo sync "$MEMBER/${{ github.event.repository.name }}" --branch main
           done
