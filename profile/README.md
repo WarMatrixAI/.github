@@ -1,13 +1,15 @@
 # WarMatrix: AI-Enabled Tactical Simulation Console
+
+[![License: AGPL v3](https://img.shields.io/badge/License-AGPL%20v3-blue.svg)](https://www.gnu.org/licenses/agpl-3.0)
 ![Next.js 15](https://img.shields.io/badge/Next.js-15-black?logo=next.js)
 ![FastAPI](https://img.shields.io/badge/FastAPI-0.109+-009688?logo=fastapi)
 ![React 19](https://img.shields.io/badge/React-19-61DAFB?logo=react)
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3.4-38B2AC?logo=tailwind-css)
 ![Three.js](https://img.shields.io/badge/Three.js-r178-black?logo=three.js)
-![TypeScript](https://img.shields.io/badge/TypeScript-5.x-3178C6?logo=typescript)
-![Python](https://img.shields.io/badge/Python-3.12-3776AB?logo=python)
+![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6?logo=typescript)
+![Python](https://img.shields.io/badge/Python-3-3776AB?logo=python)
 ![PyTorch](https://img.shields.io/badge/PyTorch-2.5-EE4C2C?logo=pytorch)
-![NVIDIA CUDA](https://img.shields.io/badge/CUDA-12.1-76B900?logo=nvidia)
+![NVIDIA CUDA](https://img.shields.io/badge/CUDA-12-76B900?logo=nvidia)
 
 Tested on: ![](https://valid.x86.fr/cache/banner/6qegm1-6.png)
 
